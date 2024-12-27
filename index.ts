@@ -1,14 +1,27 @@
-import { assertString, exportPages, importPages } from "./deps.ts";
+import { assertString } from "./deps.ts";
+import { exportPages, importPages } from "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/rest/page-data.ts";
 
-const sid = Deno.env.get("SID");
-const exportingProjectName = Deno.env.get("SOURCE_PROJECT_NAME"); //インポート元(本来はprivateプロジェクト)
-const importingProjectName = Deno.env.get("DESTINATION_PROJECT_NAME"); //インポート先(publicプロジェクト)
-const shouldDuplicateByDefault =
-  Deno.env.get("SHOULD_DUPLICATE_BY_DEFAULT") === "True";
+export async function main() {
+  const sid = Deno.env.get("SID");
+  const exportingProjectName = Deno.env.get("SOURCE_PROJECT_NAME"); //インポート元(本来はprivateプロジェクト)
+  const importingProjectName = Deno.env.get("DESTINATION_PROJECT_NAME"); //インポート先(publicプロジェクト)
+  const shouldDuplicateByDefault =
+    Deno.env.get("SHOULD_DUPLICATE_BY_DEFAULT") === "True";
 
-assertString(sid);
-assertString(exportingProjectName);
-assertString(importingProjectName);
+  // Validate SID
+  if (!sid || sid.trim() === "") {
+    throw new Error("SID is empty");
+  }
+
+  // Validate SOURCE_PROJECT_NAME
+  if (!exportingProjectName || exportingProjectName.trim() === "") {
+    throw new Error("SOURCE_PROJECT_NAME is empty");
+  }
+
+  // Validate DESTINATION_PROJECT_NAME
+  if (!importingProjectName || importingProjectName.trim() === "") {
+    throw new Error("DESTINATION_PROJECT_NAME is empty");
+  }
 
 console.log(`Exporting a json file from "/${exportingProjectName}"...`);
 const result = await exportPages(exportingProjectName, {
@@ -55,4 +68,9 @@ if (importingPages.length === 0) {
     throw error;
   }
   console.log(result.value);
+  }
+}
+
+if (import.meta.main) {
+  await main();
 }

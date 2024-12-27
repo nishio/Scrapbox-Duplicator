@@ -1,0 +1,30 @@
+{
+  "version": "4",
+  "remote": {
+    "https://deno.land/std@0.193.0/fmt/colors.ts": "d67e3cd9f472535241a8e410d33423980bec45047e343577554d3356e1f0ef4e",
+    "https://deno.land/std@0.193.0/testing/_diff.ts": "1a3c044aedf77647d6cac86b798c6417603361b66b54c53331b312caeb447aea",
+    "https://deno.land/std@0.193.0/testing/_format.ts": "a69126e8a469009adf4cf2a50af889aca364c349797e63174884a52ff75cf4c7",
+    "https://deno.land/std@0.193.0/testing/asserts.ts": "056d571baaefc7f13af3e29ad6a66d4dbe5355d3cb2ae130e7d2a1b1e01085e3",
+    "https://deno.land/x/dotenv@v3.2.0/load.ts": "cbd76a0aee01aad8d09222afaa1dd04b84d9d3e44637503b01bf77a91df9e041",
+    "https://deno.land/x/dotenv@v3.2.0/mod.ts": "077b48773de9205266a0b44c3c3a3c3083449ed64bb0b6cc461b95720678d38e",
+    "https://deno.land/x/dotenv@v3.2.0/util.ts": "693730877b13f8ead2b79b2aa31e2a0652862f7dc0c5f6d2f313f4d39c7b7670",
+    "https://deno.land/x/unknownutil@v2.0.0/assert.ts": "33ac165c3917129a66f29a7098c0d56d8be290cc271afd0152705b97c770892d",
+    "https://deno.land/x/unknownutil@v2.0.0/ensure.ts": "c7878930c8bd341e88c4f1fc742e98fe5e8451f5b9bac21fae2d085914d95827",
+    "https://deno.land/x/unknownutil@v2.0.0/is.ts": "32ef707359264c5baf97725ceb13f87ef34e73b50eb199d76034742bec21f2a2",
+    "https://deno.land/x/unknownutil@v2.0.0/maybe.ts": "260f159636893d2d0e08814151a0b19b3bc0e7fa8b423bdf2b64aa664a4ee735",
+    "https://deno.land/x/unknownutil@v2.0.0/mod.ts": "ccd4f6ba067ac766da0533f13a018a6734c042a9484115fa49c7face17e8501d",
+    "https://raw.githubusercontent.com/scrapbox-jp/types/0.3.3/base.ts": "63bd526c652edbdd43aa86b119828b87828b25dfbb997ce521437cc6fc40fbcb",
+    "https://raw.githubusercontent.com/scrapbox-jp/types/0.3.3/change.ts": "9b4d9af65a9d5aa024aa84acb62128da8db3c8892f3a0256ca89fde84ab50485",
+    "https://raw.githubusercontent.com/scrapbox-jp/types/0.3.3/commit.ts": "0c576ba285c69d13ee653d9ffb01bf30df8243f3f718ef34f821be10c3cbe0e2",
+    "https://raw.githubusercontent.com/scrapbox-jp/types/0.3.3/error.ts": "d48e7ded2683f47a778a0793e1a142baae75582ccbe9bb1c8e115787a6bcc33e",
+    "https://raw.githubusercontent.com/scrapbox-jp/types/0.3.3/response.ts": "600b05d3a803bfb8529508ab3e71a9802c444028aae68eafcd809ba24d5f025f",
+    "https://raw.githubusercontent.com/scrapbox-jp/types/0.3.3/rest.ts": "4620da5f7c9cddf5a40241b842184df57d1162fa0f549f93c0722f9275f12533",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/deps/scrapbox-rest.ts": "146dc97b709b325c9615d8bf27ed26764986547dfe5ff86fb558c3165aceeb38",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/is.ts": "e31370f6f916baa2ed9343d12b721e301f5a32623cd92e1cee7be814bde33912",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/rest/auth.ts": "7eb1aa9cc221a2bb89611406e66ad0ceaf4bf2506aefdace35581ddc3ebbbfe2",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/rest/error.ts": "4d0ee1e43ed1276aaa8b0435babed8592ccd7997dbadc0a46abb1adafe8545cd",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/rest/page-data.ts": "bfbc2ada805a0d6ccc71ba5722a518eb970f82dfd098c607f3115581ee1d07b6",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/rest/profile.ts": "00186b718c090681db0efa318ff27b9cbe14e374d77d521ce1b2bf3141ab4c95",
+    "https://raw.githubusercontent.com/takker99/scrapbox-userscript-std/0.14.1/rest/util.ts": "2d74bef54f5145f40ba486105efc7db36875465701a310c3793eec86a90eeb7a"
+  }
+}
